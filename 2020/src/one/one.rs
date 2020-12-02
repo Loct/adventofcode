@@ -1,7 +1,7 @@
-use input::input::read_input;
+use input::input::from_assignment;
 
 pub fn get() {
-    let file = read_input("./input/one");
+    let file = from_assignment(1);
     print!("answer part 1: ");
     sum_multiply(&file, 2020, 2, 0, 1);
     print!("answer part 2: ");
