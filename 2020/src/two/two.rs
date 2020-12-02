@@ -1,7 +1,7 @@
-use input::input::read_input;
+use input::input::from_assignment;
 
 pub fn get() {
-    let file = read_input("./input/two");
+    let file = from_assignment(2);
     let mut valid_one = 0;
     let mut valid_two = 0;
 

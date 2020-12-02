@@ -1,12 +1,6 @@
 extern crate curl;
 
-use std::fs;
 use std::env;
-
-
-pub fn read_input(filename: &str) -> String {
-    return fs::read_to_string(filename).expect("Something went wrong reading file");
-}
 
 pub fn from_assignment(day: i32) -> String {
     let mut data = Vec::new();
@@ -27,7 +21,7 @@ pub fn from_assignment(day: i32) -> String {
         transfer.perform().unwrap();
     }
 
-
     // Convert it to `String`
-    return String::from_utf8(data).expect("body is not valid UTF8!");
+    let body = String::from_utf8(data).expect("body is not valid UTF8!");
+    return body;
 }
