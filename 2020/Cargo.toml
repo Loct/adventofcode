@@ -1,0 +1,6 @@
+[package]
+name = "adventofcode"
+version = "0.1.0"
+authors = ["Loc Tran <loc@route42.nl>"]
+
+[dependencies]
