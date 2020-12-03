@@ -1,5 +1,5 @@
 use input::input::from_assignment;
-
+ 
 pub fn get() {
     let file = from_assignment(2);
     let mut valid_one = 0;
@@ -27,7 +27,6 @@ pub fn get() {
     }
     println!("answer part 1: {}", valid_one);
     println!("answer part 2: {}", valid_two)
-
 }
 
 fn validate_position(password: &str, needle: &str, min: usize, max: usize) -> bool {

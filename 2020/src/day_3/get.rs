@@ -12,8 +12,7 @@ pub fn get() {
     result = result * count(&lines, 5, 1);
     result = result *  count(&lines, 7, 1);
     result = result *  count(&lines, 1, 2);
-    println!("result: {:?}", result)
-
+    println!("result: {:?}", result);
 }
 
 fn count(lines: &Vec<Vec<char>>, right: usize, down: usize) -> i64 {
