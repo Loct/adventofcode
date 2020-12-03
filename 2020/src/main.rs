@@ -1,6 +1,7 @@
 mod input;
 mod one;
 mod two;
+mod three;
 
 use std::{env, io};
 
@@ -28,6 +29,7 @@ fn main() {
     match day {
         1 => one::one::get(),
         2 => two::two::get(),
+        3 => three::three::get(),
         _ => println!("Unkown day {}", day),
     }
 }
