@@ -2,6 +2,7 @@ mod input;
 mod day_1;
 mod day_2;
 mod day_3;
+mod day_4;
 
 use std::{env, io};
 
@@ -30,6 +31,7 @@ fn main() {
         1 => day_1::get::get(),
         2 => day_2::get::get(),
         3 => day_3::get::get(),
+        4 => day_4::get::get(),
         _ => println!("Unkown day {}", day),
     }
 }

@@ -5,3 +5,4 @@ authors = ["Loc Tran <loc@route42.nl>"]
 
 [dependencies]
 curl = "0.4.34"
+regex = "1"
