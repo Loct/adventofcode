@@ -11,6 +11,7 @@ pub fn get() {
 
         let row_value = divide(row, 127) * 8;
         let col_value = divide(columns, 7);
+        
         let seat_id = row_value + col_value;
         if seat_id > highest {
             highest = seat_id;
