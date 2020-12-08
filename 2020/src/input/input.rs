@@ -1,6 +1,11 @@
 extern crate curl;
 
 use std::env;
+use std::fs;
+
+pub fn read_input(filename: &str) -> String {
+    return fs::read_to_string(filename).expect("Something went wrong reading file");
+}
 
 pub fn from_assignment(day: i32) -> String {
     let mut data = Vec::new();
