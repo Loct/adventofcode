@@ -7,6 +7,7 @@ mod day_5;
 mod day_6;
 mod day_7;
 mod day_8;
+mod day_9;
 
 use std::{env, io};
 
@@ -40,6 +41,7 @@ fn main() {
         6 => day_6::get::get(),
         7 => day_7::get::get(),
         8 => day_8::get::get(),
+        9 => day_9::get::get(),
         _ => println!("Unkown day {}", day),
     }
 }
